@@ -133,7 +133,6 @@ See docs.html for API reference.
 
 README
 
-
 #'
 
 readme = README + (`lynx -dump -stdin<../docs.html`.split("\nFunction Documentation", 2).reverse.join("\n").gsub(/\[\d+\]/, "").gsub(/^\s*\d+\. .*$/, "").gsub("./docs/src/foundationallib.h.", "").gsub(/^\s*Examples\s*$/, "").gsub(/\n{3,}/, "\n"))

@@ -17,7 +17,7 @@
 # Could do a hell of a good and safe job - because these functions are really obvious how they work and have exceptional error handling.
 #
 
-def green(str = "", file=STDOUT)
+def green(str = "", file = STDOUT)
   if file.tty?
     green = "\033[0;32m"
     nc = "\033[0m" # No Color
@@ -52,7 +52,7 @@ if ARGV.size != 1 && ARGV.size != 2
   exit 1
 end
 outfile = ARGV[1] || "/dev/stdout"
-green("Writing to #{outfile}", file=STDERR)
+green("Writing to #{outfile}", file = STDERR)
 
 H = File.read(`find -name HEADERS_ONLY_FUNCTIONS.h`.chomp("\n"))
 H_LINES = H.split("\n")
@@ -61,10 +61,12 @@ $out = String.new
 def puts(str = "")
   $out << str << "\n"
 end
+
 $comments = 0
 in_ = File.read(ARGV.first)
+
 def tr(*a)
-	$comments += 1
+  $comments += 1
   first = a.shift.split(/\s+OR\s+/i)
   rest = a.flatten
   if rest.size > 1
@@ -99,12 +101,12 @@ def tr(*a)
       num += 1
       res << num.to_s << ". "
     end
-    res<<i.chomp(";")
+    res << i.chomp(";")
 
     if rest.size > 1
-    	res<<"\n"
+      res << "\n"
     else
-    	res << " "
+      res << " "
     end
 
     res << q
@@ -113,20 +115,19 @@ def tr(*a)
   "    # Transpile #{first} with | #{newline}" << q2 << (rest) << " as appropriate."
 end
 
-line_n =0
+line_n = 0
 in_.each_line do |line|
-line_n+=1
-if line_n==2
-require 'shellwords'
-puts "# Generated from #{File.basename __FILE__}"
-nlines = "#\n" + `echo #{"Allows for easy transpilation from slow languages that hinder people's lives in many ways (scriping languages) into machine-efficient code that actually runs the same operations without wasting CPU power, electricity, money, time, user's (programmer's) programmatic interactivity (ability to quickly run and recompile near-instantly) or people's attention, and is somewhat ideal.".shellescape}  | fmt -w 78`
-nlines << "\n" << `echo #{"You can easily (manually, or with AI) transpile this code now into code that actually runs fast - and actually compiles quickly (C++, Crystal and Rust can't do this and are awful at it, especially the latter two - Zig maybe is good); is safe; has good error handling; and performs the intended operations, with ease.".shellescape}  | fmt -w 78`
-nlines.gsub!"\n", "\n# "
+  line_n += 1
+  if line_n == 2
+    require "shellwords"
+    puts "# Generated from #{File.basename __FILE__}"
+    nlines = "#\n" + `echo #{"Allows for easy transpilation from slow languages that hinder people's lives in many ways (scriping languages) into machine-efficient code that actually runs the same operations without wasting CPU power, electricity, money, time, user's (programmer's) programmatic interactivity (ability to quickly run and recompile near-instantly) or people's attention, and is somewhat ideal.".shellescape}  | fmt -w 78`
+    nlines << "\n" << `echo #{"You can easily (manually, or with AI) transpile this code now into code that actually runs fast - and actually compiles quickly (C++, Crystal and Rust can't do this and are awful at it, especially the latter two - Zig maybe is good); is safe; has good error handling; and performs the intended operations, with ease.".shellescape}  | fmt -w 78`
+    nlines.gsub! "\n", "\n# "
 
-puts nlines
-nlines=nil
-end
-
+    puts nlines
+    nlines = nil
+  end
 
   newline = line.chomp("\n")
   if newline.strip == ""
@@ -185,7 +186,7 @@ end
     newline << tr("strip", H_LINES.grep(/strip\(/))
   end
   if newline.include? "map"
-  	fs=H_LINES.grep(/filesystem.*\(/)
+    fs = H_LINES.grep(/filesystem.*\(/)
     newline << tr("map", H_LINES.grep(/map.*\(/) - fs)
   end
 
@@ -210,19 +211,15 @@ end
     newline << tr("ends_with", H_LINES.grep(/ends_with.*\(/))
   end
 
-
-
   if newline.include? "count"
     newline << tr("count", H_LINES.grep(/count.*\(/))
   end
 
-
   puts newline
 end
-
 
 File.open(outfile, "w") do |file|
   file.puts $out
 end
 
-green("Wrote #{$comments} transpilation comments.", file=STDERR)
+green("Wrote #{$comments} transpilation comments.", file = STDERR)

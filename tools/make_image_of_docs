@@ -421,7 +421,7 @@ body { font-family: Monospace; font-size: 18px; }
 
 <div class=highlight style='background-color: black;'>
 #{to_nonbreaking(body.gsub("\n", "<br/>"))}
-#{"\n<h1 style='color:rgb(190,0,0); padding-bottom:100px;'><center>And many, many more...</center></h1>"}
+#{"\n<div style='color:white;padding-top:50px;padding-bottom:50px;font-family:Serif;'><center>And many, many more</center></div>"}
 </div>
 </body></html>"
 
@@ -623,10 +623,10 @@ if ARGV[0] != "video"
         page = browser.pages.first
         puts "page"
 
-        if image_path=="lib2.html"
-        page.viewport = (Puppeteer::Viewport.new(width: 1080, height: 1420))
+        if image_path == "lib2.html"
+          page.viewport = (Puppeteer::Viewport.new(width: 1080, height: 1420))
         else
-        page.viewport = (Puppeteer::Viewport.new(width: 1080, height: 1920))
+          page.viewport = (Puppeteer::Viewport.new(width: 1080, height: 1920))
         end
         puts "page.viewport"
 

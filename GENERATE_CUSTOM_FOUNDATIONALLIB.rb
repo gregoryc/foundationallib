@@ -64,12 +64,11 @@ end
   f.gsub! PREFIX + PREFIX, PREFIX
 end
 
-
 macros = []
 
 f.each_line do |line|
-	line = line[0..-1]
-	
+  line = line[0..-1]
+
   if line.start_with? "#define"
     line = line["#define ".size..-1]
     if line.size > 1 && line[-1] == "\\"

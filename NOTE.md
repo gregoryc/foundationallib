@@ -7,3 +7,15 @@ rubygems.org/gems/foundationallib. It is not really a ruby project, but the more
 
 
 I can see why this project might make some people mad or deranged.
+
+
+Mirror Links
+
+
+Blog - https://foundationallib.wordpress.com/
+
+Github - https://github.com/gregoryc/foundationallib
+
+Ruby Gem Mirror - https://rubygems.org/gems/foundationallib
+
+Ruby Gem Mirror - https://rubygems.org/gems/foundationallib2

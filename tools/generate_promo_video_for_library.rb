@@ -4,7 +4,7 @@ r = %r{/\*\*.*?\n\}}m
 system "rm imgs/*; rm vid_images/*; mkdir imgs -p; mkdir vid_images -p;"
 
 File.read("funcs_c").scan(r).shuffle.each_with_index do |i, n|
-  if i.chars.size>3000
+  if i.chars.size > 3000
     File.write "imgs/funcs#{n}.html", i
   end
 end
