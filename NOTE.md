@@ -19,3 +19,11 @@ Github - https://github.com/gregoryc/foundationallib
 Ruby Gem Mirror - https://rubygems.org/gems/foundationallib
 
 Ruby Gem Mirror - https://rubygems.org/gems/foundationallib2
+
+
+
+Google Drive Mirrors
+
+ZIP - https://drive.google.com/file/d/1bK2njCRsH4waTm4LP16sloPQawk7JIR5/view?usp=sharing
+TAR.GZ - https://drive.google.com/file/d/1RCA1yy9R3cEqI_X9Lv0fxqh-zgNCK005/view?usp=sharing
+TAR.BZ2 - https://drive.google.com/file/d/1RCA1yy9R3cEqI_X9Lv0fxqh-zgNCK005/view?usp=sharing
