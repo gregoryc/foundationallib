@@ -81,7 +81,7 @@ to <code>backticks()</code> - everything you would want to make quick and optima
 <h3>You don't want to be waiting <span style='color:rgb(240, 0, 0);'>a day</span> for an operation to complete when it could take <span style='color:rgb(30, 30, 255);'>less than an hour</span>.</h3>
 <br><p>This library is founded on very strong and unequivocal goals and philosophy. In fact, I have written many articles about the foundation of this library and more relevantly the broader context. See the Articles folder - for some of the foundation of this library.</p>
 
-<br><p>This library is an ideal and a dream - not just a Software Library. As such, I would highly suggest that you support me in this mission. Even if it's different from the status quo.<br>Are you a Rust or Zig fan? Then make a Rust or Zig version of this ideal. Let's go. Give me an email.</p>
+<br><p>This library is an ideal and a dream - not just a Software Library. As such, I would highly suggest that you support me in this mission. Even if it's different from the status quo. Are you a Rust or Zig fan? Then make a Rust or Zig version of this ideal. Let's go. Give me an email.</p>
 </div>
 </div>
 <br>

@@ -421,7 +421,7 @@ body { font-family: Monospace; font-size: 18px; }
 
 <div class=highlight style='background-color: black;'>
 #{to_nonbreaking(body.gsub("\n", "<br/>"))}
-#{"\n<h1 style='color: red; padding-bottom:100px;'>And many, many more...</h1>"}
+#{"\n<h1 style='color:rgb(190,0,0); padding-bottom:100px;'><center>And many, many more...</center></h1>"}
 </div>
 </body></html>"
 
