@@ -16,9 +16,9 @@ Blog - https://foundationallib.wordpress.com/
 
 Github - https://github.com/gregoryc/foundationallib
 
-Ruby Gem Mirror - https://rubygems.org/gems/foundationallib
+Ruby Gem Mirror - https://rubygems.org/gems/foundational_lib
 
-Ruby Gem Mirror - https://rubygems.org/gems/foundationallib2
+Ruby Gem Mirror - https://rubygems.org/gems/foundational_lib2
 
 
 
