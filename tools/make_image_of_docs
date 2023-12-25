@@ -622,7 +622,12 @@ if ARGV[0] != "video"
         end
         page = browser.pages.first
         puts "page"
+
+        if image_path=="lib2.html"
+        page.viewport = (Puppeteer::Viewport.new(width: 1080, height: 1420))
+        else
         page.viewport = (Puppeteer::Viewport.new(width: 1080, height: 1920))
+        end
         puts "page.viewport"
 
         path = "file:///#{File.expand_path(image_path)}"
