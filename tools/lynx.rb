@@ -109,6 +109,25 @@ I desire to make this library the best theoretically possible,
 so please, let us connect.
 
 
+<pre><code>
+Mirror Links
+
+Blog - https://foundationallib.wordpress.com/
+
+Github - https://github.com/gregoryc/foundationallib
+
+Ruby Gem Mirror - https://rubygems.org/gems/foundational_lib
+
+Ruby Gem Mirror - https://rubygems.org/gems/foundational_lib2
+
+Google Drive Mirrors
+
+ZIP - https://drive.google.com/file/d/1bK2njCRsH4waTm4LP16sloPQawk7JIR5/view?usp=sharing
+TAR.GZ - https://drive.google.com/file/d/1RCA1yy9R3cEqI_X9Lv0fxqh-zgNCK005/view?usp=sharing
+TAR.BZ2 - https://drive.google.com/file/d/1RCA1yy9R3cEqI_X9Lv0fxqh-zgNCK005/view?usp=sharing
+</code></pre>
+
+
 <h1>This code is in the public domain, fully.
 
 You can do whatever you want with it.
