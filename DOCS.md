@@ -107,6 +107,8 @@ Ruby Gem Mirror - https://rubygems.org/gems/foundational_lib
 
 Ruby Gem Mirror - https://rubygems.org/gems/foundational_lib2
 
+Library Instagram - https://www.instagram.com/foundationallib
+
 Google Drive Mirrors
 
 ZIP - https://drive.google.com/file/d/1bK2njCRsH4waTm4LP16sloPQawk7JIR5/view?usp=sharing
