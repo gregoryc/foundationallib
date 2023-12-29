@@ -211,16 +211,16 @@ Frozenset | The value for 'banana' is: 1
 Frozenset | The value for 'apple' is: 1
 Frozenset | Frozenset size is 3
 Test 50 - randomness.
-cherry
+date
+date
+date
 apple
+apple
+banana
+date
+cherry
 elderberry
 apple
-banana
-date
-date
-date
-banana
-banana
 Test 52
 3 size set should be. 3 <=> 3.
 Adding an additional 20,000 members to the set
@@ -273,7 +273,7 @@ dict destroyed test52
 Reading words file into array.
 /usr/share/dict/words is 104335 lines and we can efficiently play around with it in a more easy fashion than Python.
 Shuffling words
-Randomly chosen word is "teaspoonful's". Randomly chosen word is "Cochise's". Randomly chosen word is "renounced". Randomly chosen word is "own". Randomly chosen word is "household". Randomly chosen word is "renovator". Randomly chosen word is "cast's". Randomly chosen word is "philanthropist". Randomly chosen word is "hum". Randomly chosen word is "exemplar's". Randomly chosen word is "cheesecloth's". Randomly chosen word is "tippler". Randomly chosen word is "apostasy's". Randomly chosen word is "parties". Randomly chosen word is "Nova". Randomly chosen word is "quashed". Randomly chosen word is "tats". Randomly chosen word is "sterilization". Randomly chosen word is "painless". Randomly chosen word is "hankerings". Randomly chosen word is "reportedly". Randomly chosen word is "wanderlusts". Randomly chosen word is "forge". Randomly chosen word is "Slovak". Randomly chosen word is "cocoa". Randomly chosen word is "Attic's". Randomly chosen word is "nonproductive". Randomly chosen word is "burnouts". Randomly chosen word is "erupting". Randomly chosen word is "unwisest". Randomly chosen word is "crossfire". Randomly chosen word is "carrousels". Randomly chosen word is "babes". Randomly chosen word is "bursar". Randomly chosen word is "commentates". Randomly chosen word is "redounded". Randomly chosen word is "Confederate's". Randomly chosen word is "panacea's". Randomly chosen word is "Cantu's". Randomly chosen word is "Avery". Randomly chosen word is "nutshell". Randomly chosen word is "króna's". Randomly chosen word is "bristly". Randomly chosen word is "substratum's". Randomly chosen word is "Frankie's". Randomly chosen word is "soft". Randomly chosen word is "reconnects". Randomly chosen word is "specifications". Randomly chosen word is "dusk". Randomly chosen word is "mustang's". Randomly chosen word is "knocker". Randomly chosen word is "Faustian's". Randomly chosen word is "Lamont's". Randomly chosen word is "nibble's". Randomly chosen word is "Multics". Randomly chosen word is "gambler". Randomly chosen word is "Asunción's". Randomly chosen word is "Jan's". Randomly chosen word is "truncheon's". Randomly chosen word is "Elizabethan". Randomly chosen word is "photoing". Randomly chosen word is "adjoining". Randomly chosen word is "reviler's". Randomly chosen word is "confidence's". Randomly chosen word is "Pabst's". Randomly chosen word is "antigen". Randomly chosen word is "penis". Randomly chosen word is "Miami". Randomly chosen word is "Ebeneezer's". Randomly chosen word is "BA". Randomly chosen word is "sloshed". Randomly chosen word is "venomous". Randomly chosen word is "idiocies". Randomly chosen word is "blintzes". Randomly chosen word is "recompense's". Randomly chosen word is "anguished". Randomly chosen word is "Eddie's". Randomly chosen word is "aristocratically". Randomly chosen word is "showcasing". Randomly chosen word is "blockhead's". Randomly chosen word is "missionaries". Randomly chosen word is "gathered". Randomly chosen word is "dishonors". Randomly chosen word is "overhanging". Randomly chosen word is "treetop". Randomly chosen word is "chanter's". Randomly chosen word is "desperate". Randomly chosen word is "torturing". Randomly chosen word is "Antoinette's". Randomly chosen word is "Mathewson's". Randomly chosen word is "cutlass". Randomly chosen word is "amaranth's". Randomly chosen word is "Mongolia". Randomly chosen word is "cabbie's". Randomly chosen word is "vocalizing". Randomly chosen word is "sarong's". Randomly chosen word is "widening". Randomly chosen word is "nuthatches". Randomly chosen word is "Sevastopol". Randomly chosen word is "cowgirls". Randomly chosen word is "metabolizing". Randomly chosen word is "bloodiest". Randomly chosen word is "hotcake". Randomly chosen word is "conqueror". Randomly chosen word is "stagflation's". Randomly chosen word is "turnabout". Randomly chosen word is "cooker". Randomly chosen word is "fretting". Randomly chosen word is "gruffness's". Randomly chosen word is "days". Randomly chosen word is "witchery". Randomly chosen word is "capitulated". 
+Randomly chosen word is "showrooms". Randomly chosen word is "dots". Randomly chosen word is "soaking". Randomly chosen word is "carvings". Randomly chosen word is "organizing". Randomly chosen word is "anion". Randomly chosen word is "meter". Randomly chosen word is "arming". Randomly chosen word is "Jacquard's". Randomly chosen word is "tarp". Randomly chosen word is "opiate". Randomly chosen word is "toy's". Randomly chosen word is "Karina". Randomly chosen word is "skirmish". Randomly chosen word is "Hebrew's". Randomly chosen word is "backfield". Randomly chosen word is "tributary". Randomly chosen word is "lagoon". Randomly chosen word is "smocking". Randomly chosen word is "hussy". Randomly chosen word is "liaisons". Randomly chosen word is "apocalypse's". Randomly chosen word is "breeder". Randomly chosen word is "autocracies". Randomly chosen word is "excitation". Randomly chosen word is "exterminated". Randomly chosen word is "kettledrum". Randomly chosen word is "recapitulating". Randomly chosen word is "disobliges". Randomly chosen word is "metaphysical". Randomly chosen word is "stinker". Randomly chosen word is "Malthus's". Randomly chosen word is "imaginations". Randomly chosen word is "Quaalude". Randomly chosen word is "osiers". Randomly chosen word is "Parmesan's". Randomly chosen word is "raising". Randomly chosen word is "Lupus's". Randomly chosen word is "becks". Randomly chosen word is "comb". Randomly chosen word is "overblown". Randomly chosen word is "stood". Randomly chosen word is "handkerchief's". Randomly chosen word is "Douglas's". Randomly chosen word is "Gentry's". Randomly chosen word is "limped". Randomly chosen word is "minorities". Randomly chosen word is "lustiest". Randomly chosen word is "rebelled". Randomly chosen word is "Springdale's". Randomly chosen word is "conses". Randomly chosen word is "nexus". Randomly chosen word is "beverage". Randomly chosen word is "clickbait". Randomly chosen word is "inadequacies". Randomly chosen word is "estimations". Randomly chosen word is "sancta". Randomly chosen word is "racily". Randomly chosen word is "speakeasy". Randomly chosen word is "repulsive". Randomly chosen word is "cuss's". Randomly chosen word is "Clementine". Randomly chosen word is "David's". Randomly chosen word is "nanosecond". Randomly chosen word is "Roberts". Randomly chosen word is "version". Randomly chosen word is "ambitiousness". Randomly chosen word is "Muscovite's". Randomly chosen word is "unerring". Randomly chosen word is "tobogganed". Randomly chosen word is "MOOC". Randomly chosen word is "Rhine". Randomly chosen word is "swindle's". Randomly chosen word is "coincide". Randomly chosen word is "favor". Randomly chosen word is "disappointment's". Randomly chosen word is "cosmos's". Randomly chosen word is "mesmerizes". Randomly chosen word is "dray's". Randomly chosen word is "Amadeus". 
 Test 54.
 Test 1 passes.
 Test 2 passes.
@@ -327,11 +327,11 @@ i = 900000, size [899999 => 8398932]
 i = 950000, size [949999 => 8398932]
 i = 1000000, size [999999 => 8398932]
 All tests passed!
-==2820653== Memcheck, a memory error detector
-==2820653== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2820653== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==2820653== Command: ./lib_and_tests
-==2820653== 
+==5071== Memcheck, a memory error detector
+==5071== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5071== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==5071== Command: ./lib_and_tests
+==5071== 
 Allocation works.
 "Line one"
 "Line two line two"
@@ -652,20 +652,20 @@ Words file 2 is 985084
 Words file 3 is 985084
 Words file 4 is 985084
 All tests pass.
-==2820653== 
-==2820653== HEAP SUMMARY:
-==2820653==     in use at exit: 0 bytes in 0 blocks
-==2820653==   total heap usage: 787,211 allocs, 787,211 frees, 22,320,193 bytes allocated
-==2820653== 
-==2820653== All heap blocks were freed -- no leaks are possible
-==2820653== 
-==2820653== For lists of detected and suppressed errors, rerun with: -s
-==2820653== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==2820712== Memcheck, a memory error detector
-==2820712== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2820712== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==2820712== Command: ./decoupled_thorough_tests
-==2820712== 
+==5071== 
+==5071== HEAP SUMMARY:
+==5071==     in use at exit: 0 bytes in 0 blocks
+==5071==   total heap usage: 787,211 allocs, 787,211 frees, 22,320,193 bytes allocated
+==5071== 
+==5071== All heap blocks were freed -- no leaks are possible
+==5071== 
+==5071== For lists of detected and suppressed errors, rerun with: -s
+==5071== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==5104== Memcheck, a memory error detector
+==5104== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5104== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==5104== Command: ./decoupled_thorough_tests
+==5104== 
 Test 1
 First element
 First element is good.
@@ -691,15 +691,15 @@ i = 900000, size [899999 => 8398932]
 i = 950000, size [949999 => 8398932]
 i = 1000000, size [999999 => 8398932]
 All tests passed!
-==2820712== 
-==2820712== HEAP SUMMARY:
-==2820712==     in use at exit: 0 bytes in 0 blocks
-==2820712==   total heap usage: 33 allocs, 33 frees, 25,200,324 bytes allocated
-==2820712== 
-==2820712== All heap blocks were freed -- no leaks are possible
-==2820712== 
-==2820712== For lists of detected and suppressed errors, rerun with: -s
-==2820712== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==5104== 
+==5104== HEAP SUMMARY:
+==5104==     in use at exit: 0 bytes in 0 blocks
+==5104==   total heap usage: 33 allocs, 33 frees, 25,200,324 bytes allocated
+==5104== 
+==5104== All heap blocks were freed -- no leaks are possible
+==5104== 
+==5104== For lists of detected and suppressed errors, rerun with: -s
+==5104== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 Allocation works.
 "Line one"
 "Line two line two"
@@ -862,13 +862,13 @@ Equal in size
 15
 
 MULTITHREAD
+12
+14
+16
 18
 20
 22
 24
-12
-14
-16
 26
 28
 30
@@ -905,7 +905,7 @@ Printing dict values
 4. is cute
 5. barks a lot
 To a
-{man: 0x56642d13, frog: 0x56642d06, banana: 0x56642cd3, apple: 0x56642cde, cat: 0x56642cee, dog: 0x56642cf6}
+{man: 0x56661d13, frog: 0x56661d06, banana: 0x56661cd3, apple: 0x56661cde, cat: 0x56661cee, dog: 0x56661cf6}
 {man: walks, frog: ribbits, banana: is curved., apple: is red or green, cat: is cute, dog: barks a lot}
 Adding 1000
 dict_destructor(my_dict)

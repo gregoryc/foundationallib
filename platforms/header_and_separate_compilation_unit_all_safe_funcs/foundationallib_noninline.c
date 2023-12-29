@@ -2101,7 +2101,7 @@ FOUNDATIONAL_LIB_NONNULL FOUNDATIONAL_LIB_NOTHROW FOUNDATIONAL_LIB_FUNC void pri
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%d", *array[i]);
         if (i < size - 1)
@@ -2127,7 +2127,7 @@ FOUNDATIONAL_LIB_NONNULL FOUNDATIONAL_LIB_NOTHROW FOUNDATIONAL_LIB_FUNC void pri
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%lu", array[i]);
         if (i < size - 1)
@@ -2154,7 +2154,7 @@ FOUNDATIONAL_LIB_NONNULL FOUNDATIONAL_LIB_NOTHROW FOUNDATIONAL_LIB_FUNC void pri
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%lu", *array[i]);
         if (i < size - 1)
@@ -2179,7 +2179,7 @@ FOUNDATIONAL_LIB_NONNULL FOUNDATIONAL_LIB_NOTHROW FOUNDATIONAL_LIB_FUNC void pri
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%ld", array[i]);
         if (i < size - 1)
@@ -2206,7 +2206,7 @@ FOUNDATIONAL_LIB_NONNULL FOUNDATIONAL_LIB_NOTHROW FOUNDATIONAL_LIB_FUNC void pri
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%ld", *array[i]);
         if (i < size - 1)

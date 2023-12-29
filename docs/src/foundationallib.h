@@ -2112,7 +2112,7 @@ FOUNDATIONAL_LIB_FUNC void print_short_ptr_array_to_stream(const short **array, 
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%d", *array[i]);
         if (i < size - 1)
@@ -2138,7 +2138,7 @@ FOUNDATIONAL_LIB_FUNC void print_ulong_array_to_stream(const unsigned long *arra
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%lu", array[i]);
         if (i < size - 1)
@@ -2165,7 +2165,7 @@ FOUNDATIONAL_LIB_FUNC void print_ulong_ptr_array_to_stream(const unsigned long *
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%lu", *array[i]);
         if (i < size - 1)
@@ -2190,7 +2190,7 @@ FOUNDATIONAL_LIB_FUNC void print_long_array_to_stream(const long *array, size_t 
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%ld", array[i]);
         if (i < size - 1)
@@ -2217,7 +2217,7 @@ FOUNDATIONAL_LIB_FUNC void print_long_ptr_array_to_stream(const long **array, si
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         FOUNDATIONAL_LIB_FPRINTF(stream, "%ld", *array[i]);
         if (i < size - 1)

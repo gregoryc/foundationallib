@@ -2207,7 +2207,7 @@ MY_COMPANY_FOUNDATIONAL_LIB_FUNC void MY_COMPANY_print_short_ptr_array_to_stream
 {
     MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPRINTF(stream, "%d", *array[i]);
         if (i < size - 1)
@@ -2235,7 +2235,7 @@ MY_COMPANY_FOUNDATIONAL_LIB_FUNC void MY_COMPANY_print_ulong_array_to_stream(con
 {
     MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPRINTF(stream, "%lu", array[i]);
         if (i < size - 1)
@@ -2264,7 +2264,7 @@ MY_COMPANY_FOUNDATIONAL_LIB_FUNC void MY_COMPANY_print_ulong_ptr_array_to_stream
 {
     MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPRINTF(stream, "%lu", *array[i]);
         if (i < size - 1)
@@ -2291,7 +2291,7 @@ MY_COMPANY_FOUNDATIONAL_LIB_FUNC void MY_COMPANY_print_long_array_to_stream(cons
 {
     MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPRINTF(stream, "%ld", array[i]);
         if (i < size - 1)
@@ -2320,7 +2320,7 @@ MY_COMPANY_FOUNDATIONAL_LIB_FUNC void MY_COMPANY_print_long_ptr_array_to_stream(
 {
     MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(array);
     MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPUTC('[', stream);
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; ++i)
     {
         MY_COMPANY_MY_COMPANY_MY_COMPANY_FOUNDATIONAL_LIB_FPRINTF(stream, "%ld", *array[i]);
         if (i < size - 1)
