@@ -2,7 +2,7 @@
 
 <h2>Finally, a cross-platform, portable, well-designed, secure, robust, maximally-efficient C foundational library &mdash; Making Engineering And Computing Fast, Secure, Responsive And Easy.</h2>
 <br>
-<h2><i>Library Uses - What It Does, What It Is, And What It Is A Solution For</i></h2>
+<h2><i>What It Does, What It Is, And What It Is A Solution For</i></h2>
 <ul class="features-list">
 <li><strong>Enables better Engineering Solutions and Security broadly and foundationally where Software Creation or Development or Script Creation is concerned - whether this be on a local, business, governmental or international basis, and makes things easier - and Computing in General.</strong> Don't Reinvent the Wheel - Use Good Wheels - Be Safe And Secure.</li>
 <br>
