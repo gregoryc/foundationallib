@@ -10,7 +10,7 @@
 </ul>
 <br>
 <ul>
-<h2><i>About Foundationallib</i></h2>
+<h2>About Foundationallib</h2>
 <li>→<strong>Cross platform</strong> - works perfectly in embedded, server, desktop, and all platforms - tested for Windows and UNIX - 64-bit and 32-bit, includes a 3-aspect test suite, with more to come.</li>
 <li>→<strong>Bug free. Reliable. Dependable. Secure. Tested well.</strong></li>
 <li>→<strong>Zero Overhead</strong> - Only 1 byte due to the power of the error handling, can be configured will full power.</li>
@@ -39,7 +39,7 @@ See the example script in this repository. This makes optimizing your Python / P
 </p>
 </div>
 <div class=pane style='border: 0;border-right: 1px dotted rgb(200, 200, 200); background-color: rgb(255, 255, 190);'>
-<div class="library-details"><h2 style=color:green;><i>Foundationallib Features</i></h2>
+<div class="library-details"><h2 style=color:green;>Foundationallib Features</h2>
 <p class=feature>
 <strong>Functional Programming Features</strong> - <code>map, reduce, filter,</code> List Comprehensions in C and much more!</p>
 <p class=feature><strong>Expands C's Primitives for easy manipulation of data types</strong> such as Arrays, Strings, <code>Dict</code>, <code>Set</code>, <code>FrozenDict</code>, <code>FrozenSet</code> - <strong>and enables easy manipulation, modification,
