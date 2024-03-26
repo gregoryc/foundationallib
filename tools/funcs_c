@@ -3585,7 +3585,7 @@ FOUNDATIONAL_LIB_FUNC char **split(const char *str, size_t *output_size, const c
     *output_size = 1;
     const size_t delim_len = FOUNDATIONAL_LIB_STRLEN(delim);
 
-    for (const char *ptr = FOUNDATIONAL_LIB_STRSTR(str, delim); ptr != NULL && (max_times == 0 || *output_size < max_times); ptr=FOUNDATIONAL_LIB_STRSTR(ptr + delim_len, delim))
+    for (const char *ptr = FOUNDATIONAL_LIB_STRSTR(str, delim); ptr != NULL && (max_times == 0 || *output_size < max_times); ptr = FOUNDATIONAL_LIB_STRSTR(ptr + delim_len, delim))
     {
         ++(*output_size);
     }
@@ -8868,7 +8868,6 @@ FOUNDATIONAL_LIB_FUNC int replace_memory(void *source, size_t source_len, void *
 
         ++matches;
         p += find_len;
-        puts("FOR");
     }
 
     // Let's assume that it's 'likely' to find a match.
@@ -9737,7 +9736,6 @@ FOUNDATIONAL_LIB_FUNC void test31()
 }
 
 // filter_data() to avoid conflicts with curses
-
 
 /**
  * @brief Filters elements of an array (void* version) based on a specified

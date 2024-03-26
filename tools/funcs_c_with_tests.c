@@ -341,11 +341,11 @@ FOUNDATIONAL_LIB_STATIC_ASSERT_MSG((sizeof(size_t) <= 8 && FOUNDATIONAL_LIB_SIZE
 #endif
 
 #ifndef FOUNDATIONAL_LIB_STRCHR
-#define FOUNDATIONAL_LIB_STRCHR
+#define FOUNDATIONAL_LIB_STRCHR strchr
 #endif
 
 #ifndef FOUNDATIONAL_LIB_MEMCHR
-#define FOUNDATIONAL_LIB_MEMCHR
+#define FOUNDATIONAL_LIB_MEMCHR memchr
 #endif
 
 #ifndef FOUNDATIONAL_LIB_STRSTR
@@ -3645,7 +3645,7 @@ FOUNDATIONAL_LIB_FUNC char **split(const char *str, size_t *output_size, const c
     *output_size = 1;
     const size_t delim_len = FOUNDATIONAL_LIB_STRLEN(delim);
 
-    for (const char *ptr = FOUNDATIONAL_LIB_STRSTR(str, delim); ptr != NULL && (max_times == 0 || *output_size < max_times); ptr = strstr(ptr + delim_len, delim))
+    for (const char *ptr = FOUNDATIONAL_LIB_STRSTR(str, delim); ptr != NULL && (max_times == 0 || *output_size < max_times); ptr = FOUNDATIONAL_LIB_STRSTR(ptr + delim_len, delim))
     {
         ++(*output_size);
     }
@@ -3832,10 +3832,12 @@ overflow:
     return NULL;
 }
 #ifdef _WIN32
+/*
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wpragmas"
 #pragma GCC diagnostic ignored "-Wformat"
 #pragma GCC diagnostic ignored "-Wformat-extra-args"
+*/
 #endif
 
 FOUNDATIONAL_LIB_FUNC void test1(void)
@@ -8926,7 +8928,6 @@ FOUNDATIONAL_LIB_FUNC int replace_memory(void *source, size_t source_len, void *
 
         ++matches;
         p += find_len;
-        puts("FOR");
     }
 
     // Let's assume that it's 'likely' to find a match.
@@ -9793,6 +9794,9 @@ FOUNDATIONAL_LIB_FUNC void test31()
 
     assert(sum_result == 15);
 }
+
+// filter_data() to avoid conflicts with curses
+
 /**
  * @brief Filters elements of an array (void* version) based on a specified
  * condition.
@@ -9828,7 +9832,7 @@ FOUNDATIONAL_LIB_FUNC void test31()
  *   // Example usage:
  *   int my_array[] = {1, 2, 3, 4, 5};
  *   int filtered_array[5]; // Assuming the worst case where all elements
- * satisfy the condition size_t num_filtered = filter(my_array, 5, sizeof(int),
+ * satisfy the condition size_t num_filtered = filter_data(my_array, 5, sizeof(int),
  * filtered_array, 5, is_even_condition);
  *   // After the call, filtered_array will contain {2, 4}, and num_filtered
  * will be 2
@@ -9837,9 +9841,8 @@ FOUNDATIONAL_LIB_FUNC void test31()
 FOUNDATIONAL_LIB_WARN_UNUSED_RESULT
 FOUNDATIONAL_LIB_NONNULL
 FOUNDATIONAL_LIB_NOTHROW
-FOUNDATIONAL_LIB_FUNC size_t filter(void *source, size_t source_size, size_t elem_size, void *destination, size_t dest_size, int (*condition)(void *))
+FOUNDATIONAL_LIB_FUNC size_t filter_data(void *source, size_t source_size, size_t elem_size, void *destination, size_t dest_size, int (*condition)(void *))
 {
-
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(source);
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(destination);
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(condition);
@@ -9887,7 +9890,7 @@ FOUNDATIONAL_LIB_FUNC void test32()
     int *filtered_numbers = (int *)FOUNDATIONAL_LIB_MEMORY_ALLOCATOR_MALLOC(len);
 
     /* Perform the filtering (filter) */
-    const size_t filtered_size = filter(numbers, array_size, elem_size, filtered_numbers, array_size, test_is_even_void);
+    const size_t filtered_size = filter_data(numbers, array_size, elem_size, filtered_numbers, array_size, test_is_even_void);
 
     assert(filtered_size == 2);
     assert(filtered_numbers[0] == 2);
@@ -15837,8 +15840,6 @@ FOUNDATIONAL_LIB_FUNC void test_new_2(void)
 
     FOUNDATIONAL_LIB_MEMORY_ALLOCATOR_FREE(lens);
 }
-
-#pragma GCC diagnostic pop /* Niche Wformat issues */
 
 /* Test everything. */
 int main(int argc, char **argv)
