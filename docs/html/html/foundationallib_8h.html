@@ -1555,8 +1555,8 @@ Variables</h2></td></tr>
 <div class="line">        FOUNDATIONAL_LIB_FPRINTF(stderr, <span class="stringliteral">&quot;Error: %s: %s.\n&quot;</span>, __func__, strerror(errno));                                                                                                                                                                                                                                                                                                                                                                                                                           \</div>
 <div class="line">        exit(EXIT_FAILURE); <span class="comment">/* Use default exit, only place in library this is used, adjust as needed. */</span>                                                                                                                                                                                                                                                                                                                                                                                                          \</div>
 <div class="line">    }</div>
-<div class="ttc" id="afoundationallib_8h_html_a46992f145825bae5ef5bbc5953652038"><div class="ttname"><a href="foundationallib_8h.html#a46992f145825bae5ef5bbc5953652038">FOUNDATIONAL_LIB_aggressive_die</a></div><div class="ttdeci">FOUNDATIONAL_LIB_AGGRESSIVE_DIE_TYPE FOUNDATIONAL_LIB_aggressive_die</div><div class="ttdoc">Global variable to control aggressive die behavior.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:854</div></div>
-<div class="ttc" id="afoundationallib_8h_html_a9466743f89a3f09697fe602e1cc9aed9"><div class="ttname"><a href="foundationallib_8h.html#a9466743f89a3f09697fe602e1cc9aed9">FOUNDATIONAL_LIB_UNLIKELY</a></div><div class="ttdeci">#define FOUNDATIONAL_LIB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> foundationallib.h:424</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a46992f145825bae5ef5bbc5953652038"><div class="ttname"><a href="foundationallib_8h.html#a46992f145825bae5ef5bbc5953652038">FOUNDATIONAL_LIB_aggressive_die</a></div><div class="ttdeci">FOUNDATIONAL_LIB_AGGRESSIVE_DIE_TYPE FOUNDATIONAL_LIB_aggressive_die</div><div class="ttdoc">Global variable to control aggressive die behavior.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:859</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a9466743f89a3f09697fe602e1cc9aed9"><div class="ttname"><a href="foundationallib_8h.html#a9466743f89a3f09697fe602e1cc9aed9">FOUNDATIONAL_LIB_UNLIKELY</a></div><div class="ttdeci">#define FOUNDATIONAL_LIB_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> foundationallib.h:429</div></div>
 </div><!-- fragment -->
 <p>Macro to die aggressively if enabled. </p>
 <p>This macro, when used, checks if aggressive die is enabled. If enabled, it prints an error message including the function name and the error description, then terminates the program with EXIT_FAILURE. </p>
@@ -2210,7 +2210,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (<a class="code" href="foundationallib_8h.html#a9466743f89a3f09697fe602e1cc9aed9">FOUNDATIONAL_LIB_UNLIKELY</a>(<a class="code" href="foundationallib_8h.html#a61ed415504a0cad67a3de862310027a7">FOUNDATIONAL_LIB_safe_add_2_ptr</a>((variable), 1, &amp;(variable)) == 0))                                                                                                                                                                                                                                                                                                                                                                                                               \</div>
 <div class="line">        goto label_if_fails;</div>
-<div class="ttc" id="afoundationallib_8h_html_a61ed415504a0cad67a3de862310027a7"><div class="ttname"><a href="foundationallib_8h.html#a61ed415504a0cad67a3de862310027a7">FOUNDATIONAL_LIB_safe_add_2_ptr</a></div><div class="ttdeci">static size_t FOUNDATIONAL_LIB_safe_add_2_ptr(size_t a, size_t b, size_t *ptr)</div><div class="ttdoc">Safely add 2 numbers to avoid unsigned integer overflows and security and stability issues....</div><div class="ttdef"><b>Definition:</b> foundationallib.h:595</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a61ed415504a0cad67a3de862310027a7"><div class="ttname"><a href="foundationallib_8h.html#a61ed415504a0cad67a3de862310027a7">FOUNDATIONAL_LIB_safe_add_2_ptr</a></div><div class="ttdeci">static size_t FOUNDATIONAL_LIB_safe_add_2_ptr(size_t a, size_t b, size_t *ptr)</div><div class="ttdoc">Safely add 2 numbers to avoid unsigned integer overflows and security and stability issues....</div><div class="ttdef"><b>Definition:</b> foundationallib.h:600</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5959,7 +5959,7 @@ The user-defined condition function should be provided as a pointer.</dd></dl>
 <div class="line">filtered_array, 5, is_even_condition);</div>
 <div class="line">  <span class="comment">// After the call, filtered_array will contain {2, 4}, and num_filtered</span></div>
 <div class="line">will be 2</div>
-<div class="ttc" id="afoundationallib_8h_html_a6281fbcd76c275539ca924fecd202007"><div class="ttname"><a href="foundationallib_8h.html#a6281fbcd76c275539ca924fecd202007">filter_data</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC size_t filter_data(void *source, size_t source_size, size_t elem_size, void *destination, size_t dest_size, int(*condition)(void *))</div><div class="ttdoc">Filters elements of an array (void* version) based on a specified condition.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8553</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a6281fbcd76c275539ca924fecd202007"><div class="ttname"><a href="foundationallib_8h.html#a6281fbcd76c275539ca924fecd202007">filter_data</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC size_t filter_data(void *source, size_t source_size, size_t elem_size, void *destination, size_t dest_size, int(*condition)(void *))</div><div class="ttdoc">Filters elements of an array (void* version) based on a specified condition.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8540</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -6067,7 +6067,7 @@ The user-defined condition function should be provided as a pointer.</dd></dl>
 <div class="line">filtered_array, is_even_condition);</div>
 <div class="line">  <span class="comment">// After the call, filtered_array will contain {2, 4}, and num_filtered</span></div>
 <div class="line">will be 2</div>
-<div class="ttc" id="afoundationallib_8h_html_a58f0ba6b56491d49884378882242460f"><div class="ttname"><a href="foundationallib_8h.html#a58f0ba6b56491d49884378882242460f">filter_ints</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int filter_ints(int *source, size_t source_size, int *destination, int(*condition)(int))</div><div class="ttdoc">Filters elements of an integer array based on a specified condition.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8396</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a58f0ba6b56491d49884378882242460f"><div class="ttname"><a href="foundationallib_8h.html#a58f0ba6b56491d49884378882242460f">filter_ints</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int filter_ints(int *source, size_t source_size, int *destination, int(*condition)(int))</div><div class="ttdoc">Filters elements of an integer array based on a specified condition.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8383</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -8679,7 +8679,7 @@ If the array contains NULL pointers, they are treated as empty strings. </dd></d
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <span class="comment">// At least one string in the array contains non-digit characters.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="afoundationallib_8h_html_a81f2928f46f019854c576313208da05f"><div class="ttname"><a href="foundationallib_8h.html#a81f2928f46f019854c576313208da05f">is_array_digit</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int is_array_digit(const char **array, size_t size)</div><div class="ttdoc">Check if a string array contains only digits.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:9508</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a81f2928f46f019854c576313208da05f"><div class="ttname"><a href="foundationallib_8h.html#a81f2928f46f019854c576313208da05f">is_array_digit</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int is_array_digit(const char **array, size_t size)</div><div class="ttdoc">Check if a string array contains only digits.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:9489</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -9239,7 +9239,7 @@ If the array contains NULL pointers, they are treated as empty strings. </dd></d
 <div class="line"><span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>), square_transform, odd_filter, &amp;result_size);</div>
 <div class="line"><span class="comment">// Use the result array</span></div>
 <div class="line">free(result);</div>
-<div class="ttc" id="afoundationallib_8h_html_a1dfe1a09610f544e443a1224e407868d"><div class="ttname"><a href="foundationallib_8h.html#a1dfe1a09610f544e443a1224e407868d">list_comprehension</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void * list_comprehension(const void *input_array, size_t array_size, size_t elem_size, void(*transform_func)(void *value), int(*filter_func)(void *value), size_t *result_size)</div><div class="ttdoc">Perform a list comprehension operation.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8669</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a1dfe1a09610f544e443a1224e407868d"><div class="ttname"><a href="foundationallib_8h.html#a1dfe1a09610f544e443a1224e407868d">list_comprehension</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void * list_comprehension(const void *input_array, size_t array_size, size_t elem_size, void(*transform_func)(void *value), int(*filter_func)(void *value), size_t *result_size)</div><div class="ttdoc">Perform a list comprehension operation.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8656</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">// Example Usage 2: Transform each string to uppercase and filter out those</span></div>
 <div class="line">starting with <span class="charliteral">&#39;a&#39;</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *words[] = {<span class="stringliteral">&quot;apple&quot;</span>, <span class="stringliteral">&quot;banana&quot;</span>, <span class="stringliteral">&quot;orange&quot;</span>,</div>
 <div class="line"><span class="stringliteral">&quot;grape&quot;</span>, <span class="stringliteral">&quot;kiwi&quot;</span>}; <span class="keywordtype">size_t</span> words_size = <span class="keyword">sizeof</span>(words) / <span class="keyword">sizeof</span>(words[0]);</div>
@@ -9528,7 +9528,7 @@ The user-defined transformation function should be provided as a pointer.</dd></
 <div class="line"><span class="keywordtype">int</span> my_array[] = {1, 2, 3, 4, 5};</div>
 <div class="line"><a class="code" href="foundationallib_8h.html#a3a41c1ddb97e0b1c02a6c6f13063b049">map</a>(my_array, 5, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), increment_transform);</div>
 <div class="line"><span class="comment">// After the call, my_array will be {2, 3, 4, 5, 6}</span></div>
-<div class="ttc" id="afoundationallib_8h_html_a3a41c1ddb97e0b1c02a6c6f13063b049"><div class="ttname"><a href="foundationallib_8h.html#a3a41c1ddb97e0b1c02a6c6f13063b049">map</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void map(void *array, size_t size, size_t elem_size, void(*transform)(void *))</div><div class="ttdoc">Applies a transformation to each element of an array (void* version).</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8443</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a3a41c1ddb97e0b1c02a6c6f13063b049"><div class="ttname"><a href="foundationallib_8h.html#a3a41c1ddb97e0b1c02a6c6f13063b049">map</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void map(void *array, size_t size, size_t elem_size, void(*transform)(void *))</div><div class="ttdoc">Applies a transformation to each element of an array (void* version).</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8430</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -9625,7 +9625,7 @@ The user-defined transformation function should be provided as a pointer.</dd></
 <div class="line"><span class="keywordtype">int</span> my_array[] = {1, 2, 3, 4, 5};</div>
 <div class="line"><a class="code" href="foundationallib_8h.html#ab0391ca61462e6ede19f4a26e99bc553">map_ints</a>(my_array, 5, square_transform);</div>
 <div class="line"><span class="comment">// After the call, my_array will be {1, 4, 9, 16, 25}</span></div>
-<div class="ttc" id="afoundationallib_8h_html_ab0391ca61462e6ede19f4a26e99bc553"><div class="ttname"><a href="foundationallib_8h.html#ab0391ca61462e6ede19f4a26e99bc553">map_ints</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void map_ints(int *array, size_t size, int(*transform)(int))</div><div class="ttdoc">Applies a transformation to each element of an integer array.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8303</div></div>
+<div class="ttc" id="afoundationallib_8h_html_ab0391ca61462e6ede19f4a26e99bc553"><div class="ttname"><a href="foundationallib_8h.html#ab0391ca61462e6ede19f4a26e99bc553">map_ints</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void map_ints(int *array, size_t size, int(*transform)(int))</div><div class="ttdoc">Applies a transformation to each element of an integer array.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8290</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -13137,7 +13137,7 @@ The user-defined binary operation function should be provided as a pointer.</dd>
 <div class="line">  <a class="code" href="foundationallib_8h.html#aab75e49752ea0c04ea4d042f4c01631d">reduce</a>(my_array, 5, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), &amp;result, sum_operation);</div>
 <div class="line">  <span class="comment">// After the call, result will be the sum of elements: 1 + 2 + 3 + 4 + 5 =</span></div>
 <div class="line">15</div>
-<div class="ttc" id="afoundationallib_8h_html_aab75e49752ea0c04ea4d042f4c01631d"><div class="ttname"><a href="foundationallib_8h.html#aab75e49752ea0c04ea4d042f4c01631d">reduce</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void reduce(void *array, size_t size, size_t elem_size, void *result, void(*operation)(void *, void *))</div><div class="ttdoc">Performs a reduction on an array (void* version) using a binary operation.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8489</div></div>
+<div class="ttc" id="afoundationallib_8h_html_aab75e49752ea0c04ea4d042f4c01631d"><div class="ttname"><a href="foundationallib_8h.html#aab75e49752ea0c04ea4d042f4c01631d">reduce</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC void reduce(void *array, size_t size, size_t elem_size, void *result, void(*operation)(void *, void *))</div><div class="ttdoc">Performs a reduction on an array (void* version) using a binary operation.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8476</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -13243,7 +13243,7 @@ The user-defined binary operation function should be provided as a pointer.</dd>
 <div class="line">  <span class="keywordtype">int</span> result = <a class="code" href="foundationallib_8h.html#aa52f8dd426cf4a7daca875bdd89909c3">reduce_ints</a>(my_array, 5, add_operation);</div>
 <div class="line">  <span class="comment">// After the call, result will be the sum of elements: 1 + 2 + 3 + 4 + 5 =</span></div>
 <div class="line">15</div>
-<div class="ttc" id="afoundationallib_8h_html_aa52f8dd426cf4a7daca875bdd89909c3"><div class="ttname"><a href="foundationallib_8h.html#aa52f8dd426cf4a7daca875bdd89909c3">reduce_ints</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int reduce_ints(int *array, size_t size, int(*operation)(int, int))</div><div class="ttdoc">Performs a reduction on an integer array using a binary operation.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8345</div></div>
+<div class="ttc" id="afoundationallib_8h_html_aa52f8dd426cf4a7daca875bdd89909c3"><div class="ttname"><a href="foundationallib_8h.html#aa52f8dd426cf4a7daca875bdd89909c3">reduce_ints</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int reduce_ints(int *array, size_t size, int(*operation)(int, int))</div><div class="ttdoc">Performs a reduction on an integer array using a binary operation.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:8332</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -16780,7 +16780,7 @@ For efficiency, null terminated strings are not checked. As such, the blocks of 
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <span class="comment">// Handle the error.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="afoundationallib_8h_html_a887766be8a218af82614bec5e1a2df56"><div class="ttname"><a href="foundationallib_8h.html#a887766be8a218af82614bec5e1a2df56">string_array_uniq</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int string_array_uniq(const char **array, size_t size, char ***output, size_t *output_size)</div><div class="ttdoc">Remove duplicate strings from a string array.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:9624</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a887766be8a218af82614bec5e1a2df56"><div class="ttname"><a href="foundationallib_8h.html#a887766be8a218af82614bec5e1a2df56">string_array_uniq</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int string_array_uniq(const char **array, size_t size, char ***output, size_t *output_size)</div><div class="ttdoc">Remove duplicate strings from a string array.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:9605</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -16846,7 +16846,7 @@ For efficiency, null terminated strings are not checked. As such, the blocks of 
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <span class="comment">// Handle the error.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="afoundationallib_8h_html_a7c596e54c9b51906b4e53e5c74db23b6"><div class="ttname"><a href="foundationallib_8h.html#a7c596e54c9b51906b4e53e5c74db23b6">string_array_uniq_adjacent</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int string_array_uniq_adjacent(const char **first_array, size_t size, char ***new_array, size_t *new_size)</div><div class="ttdoc">Remove adjacent duplicate strings from a string array.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:9724</div></div>
+<div class="ttc" id="afoundationallib_8h_html_a7c596e54c9b51906b4e53e5c74db23b6"><div class="ttname"><a href="foundationallib_8h.html#a7c596e54c9b51906b4e53e5c74db23b6">string_array_uniq_adjacent</a></div><div class="ttdeci">FOUNDATIONAL_LIB_FUNC int string_array_uniq_adjacent(const char **first_array, size_t size, char ***new_array, size_t *new_size)</div><div class="ttdoc">Remove adjacent duplicate strings from a string array.</div><div class="ttdef"><b>Definition:</b> foundationallib.h:9705</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

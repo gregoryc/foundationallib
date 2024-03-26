@@ -82,6 +82,11 @@ struct FrozenSet;
  * ---------------------------------------------------------------------
  */
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpragmas"
+#pragma GCC diagnostic ignored "-Wformat"
+#pragma GCC diagnostic ignored "-Wformat-extra-args"
+
 /* -DFOUNDATIONAL_LIB_UNSAFE_FUNCTIONS_ENABLED=0 to turn off popen() and backticks() and shellescape(). */
 
 /** @brief
@@ -2605,13 +2610,8 @@ FOUNDATIONAL_LIB_FUNC void print_size_t_array_to_stream(const size_t *array, siz
     FOUNDATIONAL_LIB_FPUTC('[', stream);
     for (size_t i = 0; i < size; ++i)
     {
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
         FOUNDATIONAL_LIB_FPRINTF(stream, "%zu", array[i]);
 
-#pragma GCC diagnostic pop
         if (i < size - 1)
         {
             FOUNDATIONAL_LIB_FPUTS(", ", stream);
@@ -2640,13 +2640,8 @@ FOUNDATIONAL_LIB_FUNC void print_size_t_ptr_array_to_stream(const size_t **array
     FOUNDATIONAL_LIB_FPUTC('[', stream);
     for (size_t i = 0; i < size; ++i)
     {
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
 
         FOUNDATIONAL_LIB_FPRINTF(stream, "%zu", *array[i]);
-#pragma GCC diagnostic pop
         if (i < size - 1)
         {
             FOUNDATIONAL_LIB_FPUTS(", ", stream);
@@ -3828,14 +3823,6 @@ overflow:
     FOUNDATIONAL_LIB_die_aggressively_if_enabled();
     return NULL;
 }
-#ifdef _WIN32
-/*
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
-*/
-#endif
 
 /**
  * @brief Appends a new string to an existing string and updates its length and
@@ -9342,10 +9329,6 @@ FOUNDATIONAL_LIB_FUNC void *list_comprehension(const void *input_array, size_t a
     //
     // This code has no bug.
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wuse-after-free"
-
     /*
      * Make the result smaller to free a bit of memory. Not necessary, but it saves memory.
      * array_size * (*result_size) will not be larger than the current size.
@@ -9359,8 +9342,6 @@ FOUNDATIONAL_LIB_FUNC void *list_comprehension(const void *input_array, size_t a
         FOUNDATIONAL_LIB_die_aggressively_if_enabled();
         return result;
     }
-
-#pragma GCC diagnostic pop
 
     /*
     ISO/IEC 9899:2011:
@@ -13427,13 +13408,7 @@ FOUNDATIONAL_LIB_FUNC void print_long_long_to_stream(const long long value, FILE
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(stream);
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
-
     FOUNDATIONAL_LIB_FPRINTF(stream, "%lld", value);
-#pragma GCC diagnostic pop
 }
 
 /**
@@ -13479,12 +13454,7 @@ FOUNDATIONAL_LIB_FUNC void print_size_t_to_stream(const size_t value, FILE *stre
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(stream);
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
     FOUNDATIONAL_LIB_FPRINTF(stream, "%zu", value);
-#pragma GCC diagnostic pop
 }
 
 /**
@@ -13591,16 +13561,7 @@ FOUNDATIONAL_LIB_FUNC void print_ulong_to_stream(const unsigned long value, FILE
  */
 FOUNDATIONAL_LIB_NONNULL
 FOUNDATIONAL_LIB_NOTHROW
-FOUNDATIONAL_LIB_FUNC void print_ulong_long(const unsigned long long value)
-{
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
-    FOUNDATIONAL_LIB_PRINTF("%llu", value);
-#pragma GCC diagnostic pop
-}
+FOUNDATIONAL_LIB_FUNC void print_ulong_long(const unsigned long long value) { FOUNDATIONAL_LIB_PRINTF("%llu", value); }
 
 /**
  * @brief Prints an unsigned long long value to the specified stream.
@@ -13613,12 +13574,7 @@ FOUNDATIONAL_LIB_NOTHROW
 FOUNDATIONAL_LIB_FUNC void print_ulong_long_to_stream(const unsigned long long value, FILE *stream)
 {
     FOUNDATIONAL_LIB_ASSERT_ARGUMENT_IF_ENABLED(stream);
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpragmas"
-#pragma GCC diagnostic ignored "-Wformat"
-#pragma GCC diagnostic ignored "-Wformat-extra-args"
     FOUNDATIONAL_LIB_FPRINTF(stream, "%llu", value);
-#pragma GCC diagnostic pop
 }
 /**
  * @brief Print an unsigned short value.
@@ -13941,6 +13897,8 @@ FOUNDATIONAL_LIB_FUNC int download_websites(const char **websites_to_download, s
 
     return 0;
 }
+
+#pragma GCC diagnostic pop
 
 #endif /* Networking. */
 
